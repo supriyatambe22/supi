@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ 
+ 
+ 
+ <bean class="com.collection.Employee" id="emp">
+ <property name="employeeId" value="1"/>
+      
+  <property name="job">
+  <list>
+  <value>engineer</value>
+    <value>doctor</value>
+    <value>police</value>
+    </list>
+    </property>
+  
+  <property name="EmailId">
+  <set>
+  <value>abc@gmail.com</value>
+    <value>ab@gmail.com</value>
+    <value>ac@gmail.com</value>
+  
+  </set>
+  </property>
+  
+    <property name="phoneno">
+    <map>
+        <entry key="samsung" value="10000"/>
+          <entry key="oneplus" value="40000"/>
+          <entry key="realme" value="20000"/>
+  
+  </map>
+  </property>
+  
+ </bean>
+ </beans>
